@@ -14,3 +14,6 @@ class HelloApiView(APIView):
                       'Is similar to a traditional django view']
 
         return Response({'message': 'hello', 'an_apiview': an_apiview})
+    
+    def post(self,request):
+        """ Create a hello message with our name """
